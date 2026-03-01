@@ -3,6 +3,8 @@ import type { Message } from "../types/message"
 import MessageBubble from "./MessageBubble"
 import TypingIndicator from "./TypingIndicator"
 import ChatInput from "./ChatInput"
+import { botResponses } from "../utils/botResponses"
+import { normalizeText } from "../utils/normalizeText"
 
 const Chatbot = () => {
     const [messages, setMessages] = useState<Message[]>([])
@@ -12,13 +14,24 @@ const Chatbot = () => {
     const bottomRef = useRef<HTMLDivElement | null>(null)
 
     const getBotReply = (text: string) => {
-        const lower = text.toLowerCase()
-        if (lower.includes("salam")) return "Salam 👋 Mən UniBotam."
-        if (lower.includes("adın")) return "Mən AI dərsi üçün hazırlanmış chatbotam."
-        if (lower.includes("necesen")) return "Yaxşıyam 😊"
+        const normalized = normalizeText(text)
+
+        for (let item of botResponses) {
+            for (let key of item.keywords) {
+                // Regular expression match
+                const regex = new RegExp(key, "i")
+                if (regex.test(normalized)) {
+                    // Random reply seç
+                    const randomIndex = Math.floor(Math.random() * item.replies.length)
+                    return item.replies[randomIndex]
+                }
+            }
+        }
+
         return "Bağışla, bunu başa düşmədim."
     }
 
+    // Mesaj göndərmə funksiyası
     const handleSend = () => {
         if (!input.trim()) return
 
@@ -50,7 +63,7 @@ const Chatbot = () => {
     }, [messages, isTyping])
 
     return (
-        <div className="min-h-screen bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] flex justify-center items-start p-10">
+        <div className="min-h-screen bg-gradient-to-bl from-[#0f172a] via-[#1e1a78] to-[#0f172a] flex justify-center items-start p-4 sm:p-10">
             <div className="w-full max-w-md h-[80vh] bg-white/20 backdrop-blur-md rounded-3xl shadow-2xl flex flex-col border border-white/10 overflow-hidden">
 
                 {/* Header */}

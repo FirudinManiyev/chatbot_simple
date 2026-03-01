@@ -13,7 +13,7 @@ const ChatInput = ({ input, setInput, onSend }: Props) => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && onSend()}
                 placeholder="Mesaj yaz..."
-                className="flex-1 border rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="flex-1 border rounded-xl text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             <button
                 onClick={onSend}
