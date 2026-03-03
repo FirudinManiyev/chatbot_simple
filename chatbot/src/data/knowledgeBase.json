@@ -1,26 +1,236 @@
 [
   {
-    "keywords": ["salam", "merhaba", "selam"],
-    "replies": ["Salam 👋 Mən UniBotam.", "Salam! Necəsən?", "Salam dost! 😄"]
+    "keywords": [
+      "salam",
+      "merhaba",
+      "selam",
+      "hello",
+      "halo"
+    ],
+    "replies": [
+      "Salam 👋 Mən UniBotam.",
+      "Salam! Necəsən?",
+      "Salam dost! 😄",
+      "Hello! How are you?",
+      "Merhaba! Nə var nə yox?"
+    ]
   },
   {
-    "keywords": ["adın", "kim"],
-    "replies": ["Mən AI dərsi üçün hazırlanmış chatbotam.", "Mənim adım UniBotdur.", "Mənim adım FikoChatbot 😎"]
+    "keywords": [
+      "adin",
+      "kim",
+      "adınız",
+      "adın nədir"
+    ],
+    "replies": [
+      "Mən AI dərsi üçün hazırlanmış chatbotam.",
+      "Mənim adım UniBotdur.",
+      "Mənim adım FikoChatbot 😎",
+      "Mən bir virtual köməkçiyəm.",
+      "Sadəcə mənimlə söhbət et!"
+    ]
   },
   {
-    "keywords": ["necesen", "necəsən", "yaxşı"],
-    "replies": ["Yaxşıyam 😊 Sən necəsən?", "Mən yaxşıyam, təşəkkürlər!", "Superəm 😄"]
+    "keywords": [
+      "necesen",
+      "necəsən",
+      "yaxsi",
+      "necə",
+      "həvəslisən"
+    ],
+    "replies": [
+      "Yaxşıyam 😊 Sən necəsən?",
+      "Mən yaxşıyam, təşəkkürlər!",
+      "Superəm 😄",
+      "Əla hiss edirəm!",
+      "Pozitivəm və hazıram!"
+    ]
   },
   {
-    "keywords": ["xoşdur", "super"],
-    "replies": ["Sevinirəm 😄", "Mən də sevinirəm 😃", "👍 əla!"]
+    "keywords": [
+      "xoşdur",
+      "super",
+      "gözəl",
+      "əla",
+      "maraqlı"
+    ],
+    "replies": [
+      "Sevinirəm 😄",
+      "Mən də sevinirəm 😃",
+      "👍 əla!",
+      "Həqiqətən gözəl!",
+      "Çox maraqlıdır!"
+    ]
   },
   {
-    "keywords": ["harada", "yer"],
-    "replies": ["Mən virtualam, hər yerdəyəm 💻", "Mən hər yerdə olam 😉"]
+    "keywords": [
+      "harada",
+      "yer",
+      "location",
+      "hansı ölkə",
+      "şəhər"
+    ],
+    "replies": [
+      "Mən virtualam, hər yerdəyəm 💻",
+      "Mən hər yerdə olam 😉",
+      "Yerim internetdədir 🌐",
+      "Fiziki mövcudluğum yoxdur 😅"
+    ]
   },
   {
-    "keywords": ["vaxt", "saat"],
-    "replies": ["Saatı deyə bilmərəm amma dərs vaxtındayam ⏰", "Time? Mən virtualam 😎"]
+    "keywords": [
+      "vaxt",
+      "saat",
+      "neçə saat",
+      "zaman",
+      "clock"
+    ],
+    "replies": [
+      "Saatı deyə bilmərəm amma dərs vaxtındayam ⏰",
+      "Time? Mən virtualam 😎",
+      "Ancaq saatı yox, mövzunu bilirəm!",
+      "Zaman məni maraqlandırmır 😄"
+    ]
+  },
+  {
+    "keywords": [
+      "xoşbəxtlik",
+      "həyəcan",
+      "sevinc",
+      "gülmək",
+      "məmnuniyyət"
+    ],
+    "replies": [
+      "Hər gün xoşbəxt olmağa çalış!",
+      "Pozitiv qalmaq əhvalını yaxşılaşdırır 😊",
+      "Gülmək həyatdır 😄",
+      "Xoşbəxt olmaq seçimdir!"
+    ]
+  },
+  {
+    "keywords": [
+      "yemək",
+      "aşpazlıq",
+      "food",
+      "restaurant",
+      "dinner"
+    ],
+    "replies": [
+      "Mən virtualam, amma yemək haqqında danışa bilərəm 😋",
+      "Sevdiyin yeməyi mənə dey!",
+      "Sənin üçün resept tövsiyəsi verə bilərəm 🍲"
+    ]
+  },
+  {
+    "keywords": [
+      "idman",
+      "sport",
+      "futbol",
+      "basketbol",
+      "oyun"
+    ],
+    "replies": [
+      "Mən virtual idmançıyam 😎",
+      "Ən çox futbolu sevirəm ⚽",
+      "Sən hansı idmanı sevirsən?"
+    ]
+  },
+  {
+    "keywords": [
+      "film",
+      "kino",
+      "movie",
+      "serial",
+      "tv",
+      "show"
+    ],
+    "replies": [
+      "Film tövsiyəsi istəyirsən?",
+      "Serialları mən bilirəm 😄",
+      "Son zamanlar populyar filmlərdən hansını izlədin?"
+    ]
+  },
+  {
+    "keywords": [
+      "hava",
+      "weather",
+      "istilik",
+      "sərin",
+      "yağış",
+      "soyuq"
+    ],
+    "replies": [
+      "Mən real hava görə bilmirəm, amma təxmin edə bilərəm ☀️",
+      "Hava haqqında danışmaq istəyirsən?",
+      "Virtual olaraq hər zaman günəşlidir 😎"
+    ]
+  },
+  {
+    "keywords": [
+      "sual",
+      "problem",
+      "question",
+      "yardım",
+      "kömək"
+    ],
+    "replies": [
+      "Sualını ver, cavablandırmağa çalışım!",
+      "Mən buradayam, kömək üçün 😄",
+      "Hər hansı problem varsa danışa bilərsən."
+    ]
+  },
+  {
+    "keywords": [
+      "oyun",
+      "game",
+      "video game",
+      "fun"
+    ],
+    "replies": [
+      "Oyunlar əyləncəlidir 🎮",
+      "Virtual olaraq mən də oyun oynaya bilərəm 😎",
+      "Sevdiyin oyunu mənə dey!"
+    ]
+  },
+  {
+    "keywords": [
+      "musiqi",
+      "music",
+      "mahnı",
+      "song",
+      "melodiya"
+    ],
+    "replies": [
+      "Musiqi ruhun qidasıdır 🎵",
+      "Sevdiyin janr hansıdır?",
+      "Mən sənin üçün playlist tövsiyəsi verə bilərəm!"
+    ]
+  },
+  {
+    "keywords": [
+      "səyahət",
+      "travel",
+      "gəzinti",
+      "tour",
+      "holiday"
+    ],
+    "replies": [
+      "Səyahət haqqında danışmaq xoşdur 🌍",
+      "Hansı ölkəyə getmək istəyirsən?",
+      "Virtual olaraq hər yerdəyəm 😉"
+    ]
+  },
+  {
+    "keywords": [
+      "heri",
+      "beli",
+      "da",
+      "yes"
+    ],
+    "replies": [
+      "Nə heri?",
+      "beli?",
+      "da nedi yes nedi"
+    ]
   }
 ]

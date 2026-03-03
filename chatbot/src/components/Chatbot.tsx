@@ -3,8 +3,13 @@ import type { Message } from "../types/message"
 import MessageBubble from "./MessageBubble"
 import TypingIndicator from "./TypingIndicator"
 import ChatInput from "./ChatInput"
-import { botResponses } from "../utils/botResponses"
+import knowledgeBase from "../data/knowledgeBase.json"
 import { normalizeText } from "../utils/normalizeText"
+
+type KnowledgeItem = {
+    keywords: string[]
+    replies: string[]
+}
 
 const Chatbot = () => {
     const [messages, setMessages] = useState<Message[]>([])
@@ -13,15 +18,14 @@ const Chatbot = () => {
 
     const bottomRef = useRef<HTMLDivElement | null>(null)
 
+    // Ağıllı bot cavabı – JSON knowledge base + regex + random reply
     const getBotReply = (text: string) => {
         const normalized = normalizeText(text)
 
-        for (let item of botResponses) {
+        for (let item of knowledgeBase as KnowledgeItem[]) {
             for (let key of item.keywords) {
-                // Regular expression match
                 const regex = new RegExp(key, "i")
                 if (regex.test(normalized)) {
-                    // Random reply seç
                     const randomIndex = Math.floor(Math.random() * item.replies.length)
                     return item.replies[randomIndex]
                 }
