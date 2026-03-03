@@ -1,6 +1,6 @@
 # 🤖 FikoChatbot
 
-FikoChatbot modern dizaynlı, React + Tailwind ilə hazırlanmış ağıllı web chatbot layihəsidir.  
+FikoChatbot modern dizaynlı, React + Tailwind + Typescript ilə hazırlanmış ağıllı web chatbot layihəsidir.  
 JSON əsaslı mini knowledge base sistemi ilə işləyir və istifadəçi yazdığı sözləri analiz edərək uyğun cavabı avtomatik seçir.
 
 ---
@@ -50,6 +50,5 @@ Yeni sual və cavab əlavə etmək üçün sadəcə JSON faylına yeni blok əla
     "Salam, necə kömək edə bilərəm?"
   ]
 }
-
 
 Hazırlayan: Firudin Maniyev
